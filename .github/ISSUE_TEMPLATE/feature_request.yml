@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest an improvement to Survive and Dine.
+title: "[Feature]: "
+labels: ["enhancement", "New"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing requests first. Add a thumbs-up to an existing idea instead of submitting a duplicate.
+        This board is public. Keep private information and episode spoilers out of your request.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Explain what is difficult or missing today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+      description: Describe the improvement and how you would use it.
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who would benefit?
+      options:
+        - Players
+        - Commissioners
+        - Both players and commissioners
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or examples
+      description: Optional workarounds or examples. Remove private information.
