@@ -1,0 +1,44 @@
+name: Bug report
+description: Report something that is not working in Survive and Dine.
+title: "[Bug]: "
+labels: ["bug", "New"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing reports first and vote with a thumbs-up if it matches.
+        This board is public. Remove access codes, private picks, and personal information. Keep titles spoiler-free.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Save...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: e.g. iPhone / Safari, Windows / Chrome
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details or screenshots
+      description: Remove private information before sharing screenshots.
